@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Canada</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f4;">
+
+  <!-- Header -->
+  <header style="background-color:#004080; color:white; padding:20px; text-align:center;">
+    <h1>Explore Canada</h1>
+    <p>Schools, Universities, Hotels, Landscapes, Jobs & Application</p>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding:20px;">
+
+    <!-- Section: Canada's Places -->
+    <section style="margin-bottom:40px;">
+      <h2 style="color:#004080;">Canada's Highlights</h2>
+      <div style="display:flex; flex-wrap:wrap; gap:20px;">
+
+        <!-- Schools -->
+        <div style="flex:1 1 200px; text-align:center;">
+          <a href="https://www.canadaschools.ca/" target="_blank">
+            <img src="https://via.placeholder.com/200x150?text=Canada+Schools" alt="Canada Schools" style="width:200px; height:150px; border:2px solid #004080;">
+          </a>
+          <p>Canada's Schools</p>
+        </div>
+
+        <!-- Universities -->
+        <div style="flex:1 1 200px; text-align:center;">
+          <a href="https://www.universitystudy.ca/" target="_blank">
+            <img src="https://via.placeholder.com/200x150?text=Canada+Universities" alt="Canada Universities" style="width:200px; height:150px; border:2px solid #004080;">
+          </a>
+          <p>Canada's Universities</p>
+        </div>
+
+        <!-- Hotels -->
+        <div style="flex:1 1 200px; text-align:center;">
+          <a href="https://www.hotelscanada.com/" target="_blank">
+            <img src="https://via.placeholder.com/200x150?text=Canada+Hotels" alt="Canada Hotels" style="width:200px; height:150px; border:2px solid #004080;">
+          </a>
+          <p>Canada's Hotels</p>
+        </div>
+
+        <!-- Landscapes & Cities -->
+        <div style="flex:1 1 200px; text-align:center;">
+          <a href="https://www.destinationcanada.com/en" target="_blank">
+            <img src="https://via.placeholder.com/200x150?text=Canada+Landscapes" alt="Canada Landscapes" style="width:200px; height:150px; border:2px solid #004080;">
+          </a>
+          <p>Landscapes & Cities</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section: Jobs -->
+    <section style="margin-bottom:40px;">
+      <h2 style="color:#004080;">Job Opportunities</h2>
+      <div style="display:flex; gap:20px; flex-wrap:wrap;">
+
+        <!-- Engineering Jobs -->
+        <div style="flex:1 1 200px; background-color:white; padding:15px; border:1px solid #ccc;">
+          <h3 style="color:#004080;">Engineering Jobs</h3>
+          <ul>
+            <li>Civil Engineer</li>
+            <li>Mechanical Engineer</li>
+            <li>Electrical Engineer</li>
+            <li>Software Engineer</li>
+            <li>Environmental Engineer</li>
+            <li>Industrial Engineer</li>
+          </ul>
+        </div>
+
+        <!-- Medical Jobs -->
+        <div style="flex:1 1 200px; background-color:white; padding:15px; border:1px solid #ccc;">
+          <h3 style="color:#004080;">Medical Jobs</h3>
+          <ul>
+            <li>Doctor</li>
+            <li>Nurse</li>
+            <li>Pharmacist</li>
+            <li>Surgeon</li>
+            <li>Physiotherapist</li>
+            <li>Dentist</li>
+          </ul>
+        </div>
+
+        <!-- Other Jobs -->
+        <div style="flex:1 1 200px; background-color:white; padding:15px; border:1px solid #ccc;">
+          <h3 style="color:#004080;">Other Jobs</h3>
+          <ul>
+            <li>Delivery Person</li>
+            <li>Plumber</li>
+            <li>Electrician</li>
+            <li>Driver</li>
+            <li>Teacher</li>
+            <li>Retail Staff</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Apply Now Button -->
+    <section style="text-align:center; margin-bottom:40px;">
+      <button onclick="document.getElementById('applicationForm').style.display='block';" style="padding:15px 30px; font-size:18px; background-color:#004080; color:white; border:none; cursor:pointer;">Apply Now</button>
+    </section>
+
+    <!-- Application Form -->
+    <section id="applicationForm" style="display:none; max-width:500px; margin:0 auto; background-color:white; padding:20px; border:2px solid #004080;">
+      <h2 style="color:#004080; text-align:center;">Application Form</h2>
+      <form name="application" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="application">
+
+        <label>First Name:</label><br>
+        <input type="text" name="firstName" style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="lastName" style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone" style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+        <label>Gender:</label><br>
+        <select name="gender" style="width:100%; padding:8px; margin-bottom:10px;">
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br>
+
+        <label>Country:</label><br>
+        <input type="text" name="country" value="Canada" style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+        <button type="submit" style="padding:12px 25px; background-color:#004080; color:white; border:none; cursor:pointer; width:100%;">Submit Application</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color:#004080; color:white; padding:20px; text-align:center;">
+    <p>&copy; 2026 Explore Canada</p>
+  </footer>
+
+</body>
+</html>
